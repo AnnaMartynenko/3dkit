@@ -13,7 +13,7 @@ jobs:
   detect_changes:
     runs-on: ubuntu-latest
     outputs:
-      3dkit_changed: ${{ steps.filter.outputs.3dkit }}
+      3dkit_changed: ${{ steps.filter.outputs['3dkit'] }}
 
     steps:
       - uses: actions/checkout@v4
@@ -34,7 +34,7 @@ jobs:
 
   deploy_3dkit:
     needs: detect_changes
-    if: needs.detect_changes.outputs.3dkit_changed == 'true'
+    if: needs.detect_changes.outputs['3dkit_changed']== 'true'
     runs-on: ubuntu-latest
 
     permissions:
