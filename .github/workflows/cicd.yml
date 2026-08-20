@@ -30,7 +30,7 @@ jobs:
           base: ${{ github.event.before }}  
           filters: |
             3dkit:
-              - 'vue3/**'
+              - '**'
 
   deploy_3dkit:
     needs: detect_changes
