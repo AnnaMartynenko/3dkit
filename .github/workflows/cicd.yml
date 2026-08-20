@@ -3,12 +3,11 @@ name: Deploy Static Web Apps CI/CD
 on:
   push:
     branches:
-
-main
-pull_request:
-  types: [opened, synchronize, reopened, closed]
-  branches:
-main
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
 
 jobs:
   detect_changes:
@@ -17,24 +16,21 @@ jobs:
       3dkit_changed: ${{ steps.filter.outputs.3dkit }}
 
     steps:
-      
-uses: actions/checkout@v4
-      with:
-        submodules: true
-        lfs: false
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          lfs: false
 
-      
-name: Debug changed files
-      run: git diff --name-only ${{ github.event.before }} ${{ github.sha }} || true
+      - name: Debug changed files
+        run: git diff --name-only ${{ github.event.before }} ${{ github.sha }} || true
 
-
-uses: dorny/paths-filter@v3
-      id: filter
-      with:
-        base: ${{ github.event.before }}
-        filters: |
-          3dkit:
-'vue3/**'
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          base: ${{ github.event.before }}  
+          filters: |
+            3dkit:
+              - 'vue3/**'
 
   deploy_3dkit:
     needs: detect_changes
@@ -46,38 +42,32 @@ uses: dorny/paths-filter@v3
        contents: read
 
     steps:
-      
-name: Checkout repo
-      uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      
-name: Setup Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-      
-name: Install deps
-      working-directory: vue3
-      run: npm install
+      - name: Install deps
+        working-directory: vue3
+        run: npm install
 
-      
-name: Build Vue
-      working-directory: vue3
-      run: npm run build
+      - name: Build Vue
+        working-directory: vue3
+        run: npm run build
 
-      
-name: Rename dist -> 3dkit
-      run: |
-        mv vue3/dist vue3/3dkit
+      - name: Rename dist -> 3dkit
+        run: |
+          mv vue3/dist vue3/3dkit
 
-      
-name: Upload dist via SSH password
-      uses: appleboy/scp-action@v0.1.7
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USER }}
-        password: ${{ secrets.SSH_PASSWORD }}
-        source: "3dkit/"
-        target: ${{ secrets.SSH_PATH }}
-        strip_components: 1
+      - name: Upload dist via SSH password
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          source: "3dkit/"
+          target: ${{ secrets.SSH_PATH }}
+          strip_components: 1
