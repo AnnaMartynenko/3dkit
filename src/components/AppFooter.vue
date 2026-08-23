@@ -2,7 +2,7 @@
 
 <template>
   <footer class="site-footer">
-    <p>&copy; {{ new Date().getFullYear() }} Vue Shop</p>
+    <p>&copy; {{ new Date().getFullYear() }} 3Dkit</p>
   </footer>
 </template>
 

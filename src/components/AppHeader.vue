@@ -2,7 +2,7 @@
 
 <template>
   <header class="site-header">
-    <RouterLink to="/" class="logo">Vue Shop</RouterLink>
+    <RouterLink to="/" class="logo">3Dkit</RouterLink>
     <nav class="nav">
       <RouterLink to="/">Головна</RouterLink>
       <RouterLink to="/catalog">Каталог</RouterLink>
