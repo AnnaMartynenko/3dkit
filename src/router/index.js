@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { userState } from '../stores/user'
 
 const routes = [
   {
@@ -23,6 +24,23 @@ const routes = [
     component: () => import('../views/CartView.vue'),
   },
   {
+    path: '/auth',
+    name: 'auth',
+    component: () => import('../views/AuthView.vue'),
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: () => import('../views/ProfileView.vue'),
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: () => import('../views/AdminDashboard.vue'),
+    meta: { requiresAuth: true, requiresAdmin: true },
+  },
+  {
     path: '/checkout',
     name: 'checkout',
     component: () => import('../views/CheckoutView.vue'),
@@ -40,6 +58,15 @@ const router = createRouter({
   scrollBehavior() {
     return { top: 0 }
   },
+})
+
+router.beforeEach((to, from, next) => {
+  const requiresAuth = to.meta?.requiresAuth
+  const requiresAdmin = to.meta?.requiresAdmin
+  const user = userState.user
+  if (requiresAuth && !user) return next({ name: 'auth' })
+  if (requiresAdmin && user?.email !== 'noparsley@gmail.com') return next({ name: 'home' })
+  return next()
 })
 
 export default router
