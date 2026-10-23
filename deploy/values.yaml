@@ -2,7 +2,7 @@
 # сюди CI вписує лише новий тег образу.
 image:
   repository: ghcr.io/annamartynenko/3dkit
-  tag: PLACEHOLDER
+  tag: sha-2678483ea2a5108f8e9fc55a20588fd9b5e5b7e3
 
 service:
   port: 80
