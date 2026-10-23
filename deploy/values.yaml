@@ -1,0 +1,28 @@
+# Опис розгортання 3dkit. Chart лежить у nickROMAnt/Mono,
+# сюди CI вписує лише новий тег образу.
+image:
+  repository: ghcr.io/annamartynenko/3dkit
+  tag: PLACEHOLDER
+
+service:
+  port: 80
+  targetPort: 80
+
+probes:
+  readiness: /
+  liveness: /
+
+replicas:
+  min: 2
+
+autoscaling:
+  enabled: false
+
+ingress:
+  enabled: true
+  host: 3dkit.com.ua
+  path: /
+
+resources:
+  requests: { cpu: 5m, memory: 8Mi }
+  limits:   { cpu: 50m, memory: 48Mi }
