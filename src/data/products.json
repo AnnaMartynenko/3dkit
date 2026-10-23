@@ -1,0 +1,248 @@
+{
+  "currency": "UAH",
+  "updatedAt": "2026-10-23",
+  "products": [
+    {
+      "id": "trafarety-tematychni-15x20",
+      "title": "Трафарет тематичний 15 × 20 см",
+      "category": "stencils",
+      "subcategory": "themed",
+      "price": 50,
+      "oldPrice": null,
+      "description": "Трафарет для малювання на папері з готовими дизайнами. Обери один із шести: форми, тварини океану, феї, тварини лісу, космос або динозаври. Можна замовити й власний малюнок у цьому ж розмірі.",
+      "details": [
+        "Розмір: 15 × 20 см",
+        "Товщина: 2 мм",
+        "Матеріал: PLA",
+        "6 дизайнів на вибір",
+        "Для паперу та картону"
+      ],
+      "images": [
+        "/products/trafarety-tematychni-15x20/1.jpg",
+        "/products/trafarety-tematychni-15x20/2.jpg",
+        "/products/trafarety-tematychni-15x20/3.jpg",
+        "/products/trafarety-tematychni-15x20/4.jpg",
+        "/products/trafarety-tematychni-15x20/5.jpg",
+        "/products/trafarety-tematychni-15x20/6.jpg",
+        "/products/trafarety-tematychni-15x20/7.jpg"
+      ],
+      "tags": ["трафарет", "тематичний", "малювання", "дитяча творчість"],
+      "inStock": true,
+      "featured": true,
+      "ageGroup": null,
+      "source": {
+        "platform": "instagram",
+        "permalink": null,
+        "postedAt": "2026-10-19"
+      }
+    },
+    {
+      "id": "serezhky-kvitkovi-motyvy",
+      "title": "Сережки «Квіткові мотиви»",
+      "category": "earrings",
+      "price": null,
+      "oldPrice": null,
+      "description": "Мінімалістичні квіти на довгих гачках — легкий акцент до повсякденного образу. Доступні в трьох кольорах: золотий, срібний і чорний.",
+      "details": [
+        "Висота квітки: 5 см",
+        "Загальна висота сережки: 6,7 см",
+        "Гачки: посріблена мідь",
+        "Квіти: PLA"
+      ],
+      "images": [
+        "/products/serezhky-kvitkovi-motyvy/1.jpg",
+        "/products/serezhky-kvitkovi-motyvy/2.jpg",
+        "/products/serezhky-kvitkovi-motyvy/3.jpg",
+        "/products/serezhky-kvitkovi-motyvy/4.jpg",
+        "/products/serezhky-kvitkovi-motyvy/5.jpg",
+        "/products/serezhky-kvitkovi-motyvy/6.jpg",
+        "/products/serezhky-kvitkovi-motyvy/7.jpg"
+      ],
+      "tags": ["сережки", "квіти", "мінімалізм"],
+      "inStock": true,
+      "featured": true,
+      "ageGroup": null,
+      "source": {
+        "platform": "instagram",
+        "permalink": null,
+        "postedAt": "2026-08-20"
+      }
+    },
+    {
+      "id": "shkatulka-khvylya",
+      "title": "Шкатулка «Хвиля»",
+      "category": "boxes",
+      "price": null,
+      "oldPrice": null,
+      "description": "Шкатулка для сережок, каблучок та інших дрібниць. Плавна форма «хвилі» й щільна кришка, щоб нічого не губилося. Доступна у двох кольорах: срібло та золото.",
+      "details": [
+        "Зовнішній розмір: 94 × 149 мм, висота 46 мм",
+        "Внутрішній розмір: 85 × 141 мм, висота 35 мм",
+        "2 кольори: срібло, золото",
+        "Матеріал: PLA"
+      ],
+      "images": [
+        "/products/shkatulka-khvylya/1.jpg",
+        "/products/shkatulka-khvylya/2.jpg",
+        "/products/shkatulka-khvylya/3.jpg",
+        "/products/shkatulka-khvylya/4.jpg",
+        "/products/shkatulka-khvylya/5.jpg",
+        "/products/shkatulka-khvylya/6.jpg"
+      ],
+      "tags": ["шкатулка", "органайзер", "зберігання", "подарунок"],
+      "inStock": true,
+      "featured": true,
+      "ageGroup": null,
+      "source": {
+        "platform": "instagram",
+        "permalink": null,
+        "postedAt": "2026-09-10"
+      }
+    },
+    {
+      "id": "serezhky-kavunchyky",
+      "title": "Сережки «Кавунчики»",
+      "category": "earrings",
+      "price": null,
+      "oldPrice": null,
+      "description": "Соковиті скибочки кавуна — маленькі, але помітні. Легкі сережки на гачках із посрібленої міді.",
+      "details": [
+        "Висота кавунчика: 2,5 см",
+        "Загальна висота сережки: 4,2 см",
+        "Гачки: посріблена мідь",
+        "Кавунчик: PLA"
+      ],
+      "images": [
+        "/products/serezhky-kavunchyky/1.jpg",
+        "/products/serezhky-kavunchyky/2.jpg",
+        "/products/serezhky-kavunchyky/3.jpg"
+      ],
+      "tags": ["сережки", "кавун", "літо"],
+      "inStock": true,
+      "featured": false,
+      "ageGroup": null,
+      "source": {
+        "platform": "instagram",
+        "permalink": null,
+        "postedAt": "2026-08-21"
+      }
+    },
+    {
+      "id": "serezhky-skybochky-kavuna",
+      "title": "Сережки «Скибочки кавуна»",
+      "category": "earrings",
+      "price": null,
+      "oldPrice": null,
+      "description": "Скибочка кавуна з насінням — яскрава літня прикраса. Легка, не відтягує вухо.",
+      "details": [
+        "Висота скибочки: 3 см",
+        "Загальна висота сережки: 5 см",
+        "Гачки: посріблена мідь",
+        "Скибочка: PLA"
+      ],
+      "images": [
+        "/products/serezhky-skybochky-kavuna/1.jpg",
+        "/products/serezhky-skybochky-kavuna/2.jpg",
+        "/products/serezhky-skybochky-kavuna/3.jpg",
+        "/products/serezhky-skybochky-kavuna/4.jpg",
+        "/products/serezhky-skybochky-kavuna/5.jpg",
+        "/products/serezhky-skybochky-kavuna/6.jpg"
+      ],
+      "tags": ["сережки", "кавун", "літо"],
+      "inStock": true,
+      "featured": false,
+      "ageGroup": null,
+      "source": {
+        "platform": "instagram",
+        "permalink": null,
+        "postedAt": "2026-08-20"
+      }
+    },
+    {
+      "id": "serezhky-apelsynovyy-slays",
+      "title": "Сережки «Апельсиновий слайс»",
+      "category": "earrings",
+      "price": null,
+      "oldPrice": null,
+      "description": "Часточка апельсина додає настрою навіть у похмурий день. Яскрава, але легка — на гачках із посрібленої міді.",
+      "details": [
+        "Висота апельсина: 4 см",
+        "Загальна висота сережки: 5,6 см",
+        "Гачки: посріблена мідь",
+        "Апельсин: PLA"
+      ],
+      "images": [
+        "/products/serezhky-apelsynovyy-slays/1.jpg",
+        "/products/serezhky-apelsynovyy-slays/2.jpg",
+        "/products/serezhky-apelsynovyy-slays/3.jpg",
+        "/products/serezhky-apelsynovyy-slays/4.jpg"
+      ],
+      "tags": ["сережки", "апельсин", "літо"],
+      "inStock": true,
+      "featured": false,
+      "ageGroup": null,
+      "source": {
+        "platform": "instagram",
+        "permalink": null,
+        "postedAt": "2026-08-20"
+      }
+    },
+    {
+      "id": "serezhky-romashka",
+      "title": "Сережки «Ромашка»",
+      "category": "earrings",
+      "price": null,
+      "oldPrice": null,
+      "description": "Ніжна ромашка для щоденного образу. Пелюстки зібрані в об'ємну квітку, гачки — з посрібленої міді.",
+      "details": [
+        "Діаметр квітки: 2,5 см",
+        "Загальна висота сережки: 4,2 см",
+        "Гачки: посріблена мідь",
+        "Квітка: PLA"
+      ],
+      "images": [
+        "/products/serezhky-romashka/1.jpg",
+        "/products/serezhky-romashka/2.jpg",
+        "/products/serezhky-romashka/3.jpg",
+        "/products/serezhky-romashka/4.jpg"
+      ],
+      "tags": ["сережки", "ромашка", "квіти"],
+      "inStock": true,
+      "featured": false,
+      "ageGroup": null,
+      "source": {
+        "platform": "instagram",
+        "permalink": null,
+        "postedAt": "2026-08-20"
+      }
+    },
+    {
+      "id": "serezhky-kotyky",
+      "title": "Сережки «Котики»",
+      "category": "earrings",
+      "price": null,
+      "oldPrice": null,
+      "description": "Милі котики для тих, хто любить мініатюрні прикраси. Легкі, з акуратними гачками з посрібленої міді.",
+      "details": [
+        "Висота котика: 3,5 см",
+        "Загальна висота сережки: 5 см",
+        "Гачки: посріблена мідь",
+        "Котик: PLA"
+      ],
+      "images": [
+        "/products/serezhky-kotyky/1.jpg",
+        "/products/serezhky-kotyky/2.jpg",
+        "/products/serezhky-kotyky/3.jpg"
+      ],
+      "tags": ["сережки", "котики", "тварини"],
+      "inStock": true,
+      "featured": true,
+      "ageGroup": null,
+      "source": {
+        "platform": "instagram",
+        "permalink": null,
+        "postedAt": "2026-08-21"
+      }
+    }
+  ]
+}
