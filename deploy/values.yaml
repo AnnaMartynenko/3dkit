@@ -21,7 +21,14 @@ autoscaling:
 ingress:
   enabled: true
   host: 3dkit.com.ua
+  extraHosts:
+    - www.3dkit.com.ua
   path: /
+  tls:
+    # Secret із сертифікатом живе в кластері, у namespace web.
+    # Зараз туди покладений наявний сертифікат certbot;
+    # далі його обслуговуватиме cert-manager через HTTP-01.
+    secretName: 3dkit-tls
 
 resources:
   requests: { cpu: 5m, memory: 8Mi }
